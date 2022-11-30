@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css"" />
+    <title>Listar Noticias</title>
+</head>
+<body>
+    <%- include('nav') -%>
+    <ul>
+    <% for(var i=0; i< lista_boletim.length; ++i) { %>  
+    <div class="card">     
+        <li>
+            <span class="descritor">Titulo:</span> <%=lista_boletim[i].titulo %><br/>
+            <span class="descritor">Data:</span> <%=lista_boletim[i].data %><br/>
+            <span class="descritor">Descricao:</span> <%=lista_boletim[i].descricao %><br/>
+        </li> 
+    </div>
+    <% } %>
+    </ul>
+</body>
+</html>

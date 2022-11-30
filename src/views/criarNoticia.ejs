@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Adicionar Noticia</title>
+</head>
+<body>
+    <%- include('nav') -%>
+        <div class="modal">
+                <form class="forms" action="noticia" method="post">
+                    Titulo da Noticia: <input class="inputBox" type="text" name=titulo value="Informe um titulo para a Noticia..." /><br/>
+                    Data: <input class="inputBox" type="date" name=data value="00/00/0000" /><br/>
+                    Descricao: <input class="inputBox" type="text" name=descricao value="Sobre a Noticia..." /><br/>
+                    <input class="submitButton" type="submit" value="Confirmar" />
+                </form>
+        </div>
+    </body>
+</html>
